@@ -34,6 +34,11 @@ module.exports = {
     plugins: [
         new HtmlWebpackPlugin({ 
             template: './public/index.html'
+        }),
+        new CopyWebpackPlugin({
+            patterns: [
+                { from: 'public/favicon.svg', to: 'favicon.svg' }
+            ]
         })
     ]
 };
