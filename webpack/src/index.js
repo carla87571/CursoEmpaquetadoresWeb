@@ -1,4 +1,4 @@
-import profileImage from './assets/images/CarlaLinkTree.png';
+import profileImage from './assets/images/CarlaFotoWeb.png';
 
 const $links = document.getElementById("links");
 const $name = document.querySelector("h1");
