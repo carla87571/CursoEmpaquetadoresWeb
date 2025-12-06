@@ -1,10 +1,117 @@
-<!DOCTYPE html><html lang=en><meta charset=UTF-8><meta name=viewport content="width=device-width, initial-scale=1.0"><title>Document</title><link href=/CursoEmpaquetadoresWeb/parcel/parcel.df64e05b.css rel=stylesheet><body>
-    <main class=Main>
-        <h1>PlatziStore</h1>
-        <div id=app>
-
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso Empaquetadores Web - Proyectos</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            max-width: 600px;
+            width: 100%;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 2rem;
+        }
+        
+        .subtitle {
+            color: #666;
+            margin-bottom: 30px;
+            font-size: 1.1rem;
+        }
+        
+        .projects {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        
+        .project-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 10px;
+            padding: 20px;
+            text-decoration: none;
+            color: white;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: block;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        
+        .project-card h2 {
+            font-size: 1.5rem;
+            margin-bottom: 8px;
+        }
+        
+        .project-card p {
+            opacity: 0.9;
+            font-size: 0.95rem;
+        }
+        
+        .badge {
+            display: inline-block;
+            background: rgba(255,255,255,0.2);
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            margin-top: 10px;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            color: #666;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 Curso Empaquetadores Web</h1>
+        <p class="subtitle">Proyectos de práctica con diferentes bundlers</p>
+        
+        <div class="projects">
+            <a href="./webpack/" class="project-card">
+                <h2>📦 Webpack Project</h2>
+                <p>E-commerce con Webpack bundler</p>
+                <span class="badge">Webpack 5</span>
+            </a>
+            
+            <a href="./parcel/" class="project-card">
+                <h2>⚡ Parcel Project</h2>
+                <p>E-commerce con Parcel bundler</p>
+                <span class="badge">Parcel 2</span>
+            </a>
         </div>
-    </main>
-    
-
-<script defer src=/CursoEmpaquetadoresWeb/parcel/parcel.ad19bf27.js></script>
+        
+        <footer>
+            Por Carla Mendía Díaz
+        </footer>
+    </div>
+</body>
+</html>
