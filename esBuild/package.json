@@ -7,7 +7,8 @@
     "build": "node esbuild.prod.js",
     "build:dev": "node esbuild.dev.js",
     "start": "node esbuild.dev.js -w",
-    "open": "open public/index.html"
+    "open": "open public/index.html",
+    "deploy": "npm run build && cd .. && git add esBuild/public && git commit -m 'Deploy esbuild' && git push && git checkout gh-pages && git merge main --no-edit && git push && git checkout main"
   },
   "keywords": [],
   "author": "Carla Mendía Díaz",
