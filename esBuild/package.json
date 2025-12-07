@@ -1,0 +1,27 @@
+{
+  "name": "esbuild",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "node esbuild.prod.js",
+    "build:dev": "node esbuild.dev.js",
+    "start": "node esbuild.dev.js -w",
+    "open": "open public/index.html"
+  },
+  "keywords": [],
+  "author": "Carla Mendía Díaz",
+  "license": "MIT",
+  "type": "module",
+  "devDependencies": {
+    "esbuild": "^0.27.1",
+    "esbuild-serve": "^1.0.1"
+  },
+  "dependencies": {
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.3",
+    "react": "^19.2.1",
+    "react-dom": "^19.2.1",
+    "typescript": "^5.9.3"
+  }
+}
