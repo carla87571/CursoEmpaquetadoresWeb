@@ -2,8 +2,6 @@
 node_modules/
 
 # Build outputs
-dist/
-public/bundle.js
 public/bundle.js.map
 
 # IDE
