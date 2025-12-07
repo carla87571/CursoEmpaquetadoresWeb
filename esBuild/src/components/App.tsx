@@ -43,7 +43,7 @@ const App = (props: { message: string }) => {
     return (
         <div className="container">
             <h1 className="title">{props.message}</h1>
-            <p className="subtitle">Contador interactivo con esbuild</p>
+            <p className="subtitle">Contador interactivo con React + TypeScript</p>
             
             <CounterDisplay count={count} pulseAnimation={pulseAnimation} />
             
