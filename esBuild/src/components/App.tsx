@@ -59,6 +59,10 @@ const App = (props: { message: string }) => {
                 maxValue={maxValue}
                 minValue={minValue}
             />
+            
+            <div className="footer">
+                Hecho con ⚡ esbuild por Carla Mendía Díaz
+            </div>
         </div>
     );
 }
