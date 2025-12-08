@@ -7,6 +7,7 @@
     "start": "web-dev-server --config web-dev-server.config.js",
     "build": "rollup -c",
     "dev": "rollup -c -w",
+    "deploy": "npm run build && cd .. && bash -c 'git checkout gh-pages && git checkout main -- rollup/dist && cp -r rollup/dist/* rollup/ && rm -rf rollup/dist rollup/node_modules rollup/package-lock.json && git add rollup/ && git commit -m \"Deploy Rollup project\" && git push origin gh-pages && git checkout main'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
